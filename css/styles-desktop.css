@@ -1,0 +1,30 @@
+.characteristics {
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    ". team-builder ."
+    "supervisor team-builder calculator"
+    "supervisor karma calculator"
+    ". karma ."
+    ;
+    gap: 3rem;
+}
+
+.characteristics article {
+    margin-bottom: 0;
+}
+
+.characteristics--supervisor-card {
+    grid-area: supervisor;
+}
+.characteristics--team-builder-card {
+    grid-area: team-builder;
+}
+.characteristics--karma-card {
+    grid-area: karma;
+}
+.characteristics--calculator-card {
+    grid-area: calculator;
+}
